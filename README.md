@@ -1,35 +1,49 @@
 # NestJS API Boilerplate
 
-Este repositório serve como um modelo padrão (boilerplate) para novos projetos utilizando o [NestJS](https://nestjs.com/), um framework progressivo para a construção de aplicações Node.js escaláveis, com foco em APIs RESTful.
+This repository serves as a standard boilerplate for new projects using [NestJS](https://nestjs.com/), a progressive framework for building scalable Node.js applications, with a focus on RESTful APIs.
 
-## 📋 Funcionalidades
+## 📋 Features
 
-- Estrutura básica de um projeto NestJS com módulos, serviços e controladores.
-- Suporte a padrões de autenticação com JWT.
-- Conexão com banco de dados usando TypeORM e suporte a várias bases de dados (PostgreSQL, MySQL, etc.).
-- Validação de entrada com `class-validator`.
-- Mecanismos de controle de exceções e erros padrão.
-- Configuração pronta para uso do `.env` para variáveis de ambiente.
-- Suporte a testes unitários com Jest.
-- Swagger UI integrada para documentação automática de APIs.
-  
-## 🚀 Tecnologias Utilizadas
+- Basic structure of a NestJS project with modules, services, and controllers.
+- Support for JWT authentication patterns.
+- Database connection using TypeORM with support for multiple databases (PostgreSQL, MySQL, etc.).
+- Input validation with `class-validator`.
+- Standard exception and error handling mechanisms.
+- Ready-to-use `.env` configuration for environment variables.
+- Unit testing support with Jest.
+- Integrated Swagger UI for automatic API documentation.
 
-- **NestJS** - Framework para construção da API.
-- **TypeScript** - Linguagem de desenvolvimento.
-- **TypeORM** - ORM para gerenciar a interação com o banco de dados.
-- **JWT** - Autenticação baseada em token.
-- **Swagger** - Documentação da API.
-- **Jest** - Framework de testes.
+## 🚀 Technologies Used
 
-## 📁 Estrutura de Pastas
+- **NestJS** - Framework for building the API.
+- **TypeScript** - Development language.
+- **TypeORM** - ORM for managing database interactions.
+- **JWT** - Token-based authentication.
+- **Swagger** - API documentation.
+- **Jest** - Testing framework.
+
+## 📁 Folder Structure
 
 ```bash
 src/
-├── app.module.ts        # Módulo raiz da aplicação
-├── auth/                # Módulo de autenticação
-├── common/              # Módulo com utilitários e decorators comuns
-├── config/              # Configurações da aplicação
-├── users/               # Módulo de usuários (exemplo)
-├── main.ts              # Arquivo de inicialização da aplicação
-└── ...                  # Outras pastas e arquivos
+├── app.module.ts        # Root module of the application
+├── auth/                # Authentication module
+├── common/              # Module with common utilities and decorators
+├── config/              # Application configurations
+├── users/               # Users module (example)
+├── main.ts              # Application bootstrap file
+└── ...                  # Other folders and files
+```
+
+## 📝 Requirements
+- `docker-engine` and `docker-compose`
+
+## ⚙️ Installation
+To install the project, follow these steps:
+
+- Clone the repository using the command git clone <repository URL>
+- Run the command `docker-compose up` to run the application on foreground (use `-d` for running on background)
+    - depending on which version and how you installed docker-compose, you may need to run as `docker compose up
+    
+## 💻 Testing
+The testing module is under development.
